@@ -1,0 +1,20 @@
+.card-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 5px;
+    max-width: 200px;
+    text-align: center;
+    background-color: aqua;
+}
+
+.card img {
+    margin-top: 1rem;
+    height: 150px;
+    width: 150px;
+}

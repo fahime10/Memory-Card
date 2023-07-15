@@ -1,0 +1,13 @@
+.card-grid {
+    display: grid;
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.card img {
+    height: 100px;
+    width: 100px;
+}
