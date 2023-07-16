@@ -1,14 +1,8 @@
-import { useState } from "react";
+import React from "react";
 
 const Card = (props) => {
-    const [ clicked, setClicked ] = useState("false");
-
-    const setToClicked = () => {
-        setClicked("true");
-    }
-
     return (
-        <div className={"card - " + props.name} state={clicked} onClick={setToClicked}>
+        <div className={"card - " + props.name} onClick={() => props.incrementScore(props.name)}>
             <img src={props.image} alt={props.image} />
             <p>{props.name}</p>
         </div>

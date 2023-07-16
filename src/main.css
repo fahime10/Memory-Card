@@ -1,9 +1,33 @@
 body {
     margin: 0;
+    background-color: rgb(33, 33, 126);
 }
 
 .title, .instructions, .score-board {
     text-align: center;
+}
+
+.title, .instructions {
+    color: gold;
+}
+
+.instructions {
+    font-size: 1.5rem;
+}
+
+.score-board {
+    display: flex;
+    font-size: 130%;
+    justify-content: center;
+}
+
+.best, .current {
+    color: rgb(210, 183, 30);
+    font-weight: bold;
+}
+
+.current {
+    margin-left: 2rem;
 }
 
 .card-grid {
@@ -35,7 +59,7 @@ body {
 
 footer {
     text-align: center;
-    background-color: blue;
+    background-color: rgb(33, 33, 126);
     color: gold;
     padding: 1rem;
     margin-top: 1rem;
