@@ -1,7 +1,7 @@
 {
   "name": "memory-card",
   "version": "0.1.0",
-  "homepage": "http://fahime10.github.io/react-gh-pages",
+  "homepage": "http://fahime10.github.io/memory-card",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
