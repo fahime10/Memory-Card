@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.f3732607.css",
+    "main.js": "/react-gh-pages/static/js/main.2e496f09.js",
+    "static/media/pawn.jpg": "/react-gh-pages/static/media/pawn.af2c9631a25b276d9993.jpg",
+    "static/media/checkmate.png": "/react-gh-pages/static/media/checkmate.b350d7d95b47d40812c4.png",
+    "static/media/chessboard.png": "/react-gh-pages/static/media/chessboard.0956eb625bbd5aa43b0a.png",
+    "static/media/king.png": "/react-gh-pages/static/media/king.da7971aec62190e7003d.png",
+    "static/media/rook.jpg": "/react-gh-pages/static/media/rook.df3fd41f96c19cd254fc.jpg",
+    "static/media/bishop.png": "/react-gh-pages/static/media/bishop.c305099541603f01dae1.png",
+    "static/media/knight.png": "/react-gh-pages/static/media/knight.12e671ccb3d6e570f520.png",
+    "static/media/queen.png": "/react-gh-pages/static/media/queen.16502ce092873b6ac92e.png",
+    "index.html": "/react-gh-pages/index.html",
+    "main.f3732607.css.map": "/react-gh-pages/static/css/main.f3732607.css.map",
+    "main.2e496f09.js.map": "/react-gh-pages/static/js/main.2e496f09.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3732607.css",
+    "static/js/main.2e496f09.js"
+  ]
+}
