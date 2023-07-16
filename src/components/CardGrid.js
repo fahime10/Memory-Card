@@ -11,54 +11,36 @@ import Checkmate from "../assets/checkmate.png";
 
 const CardGrid = () => {
     const [cards, setCards] = useState([
-        {
-            image: King,
-            name: "King",
-        },
-        {
-            image: Queen,
-            name: "Queen",
-        },
-        {
-            image: Knight,
-            name: "Knight",
-        },
-        {
-            image: Rook,
-            name: "Rook",
-        },
-        {
-            image: Bishop,
-            name: "Bishop",
-        },
-        {
-            image: Pawn,
-            name: "Pawn",
-        },
-        {
-            image: Chessboard,
-            name: "Chessboard",
-        },
-        {
-            image: Checkmate,
-            name: "Checkmate",
-        },
+        {image: King, name: "King"}, {image: Queen,name: "Queen"},
+        {image: Knight, name: "Knight"}, {image: Rook, name: "Rook"},
+        {image: Bishop, name: "Bishop"}, {image: Pawn, name: "Pawn"},
+        {image: Chessboard, name: "Chessboard"}, {image: Checkmate, name: "Checkmate"}
     ]);
-    
-    shuffleCards(cards);
 
-    const shuffleAgain = (cards) => {
-        shuffleCards(cards);
+    const shuffleAgain = () => {
+        setCards(shuffleCards(cards));
+        console.log(cards);
     }
+
+    useEffect(() => {
+        document.querySelectorAll(".card").forEach((card) => {
+            card.addEventListener("click", shuffleAgain);
+        });
+
+        return () => {
+            document.querySelectorAll(".card").forEach((card) => {
+                card.removeEventListener("click", shuffleAgain);
+            });
+        }
+    });
 
     return (
         <div className="card-grid">
-            {[...cards].map((card, index) => (
+            {shuffleCards(cards).map((card, index) => (
                 <Card
                     key={index}
                     image={card.image}
                     name={card.name}
-                    onClick={shuffleAgain}
                 />
             ))}
         </div>

@@ -1,4 +1,13 @@
+body {
+    margin: 0;
+}
+
+.title, .instructions, .score-board {
+    text-align: center;
+}
+
 .card-grid {
+    margin-left: 2rem;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -17,4 +26,17 @@
     margin-top: 1rem;
     height: 150px;
     width: 150px;
+}
+
+.card:hover {
+    cursor: pointer;
+    scale: (0.6);
+}
+
+footer {
+    text-align: center;
+    background-color: blue;
+    color: gold;
+    padding: 1rem;
+    margin-top: 1rem;
 }

@@ -8,7 +8,7 @@ const Card = (props) => {
     }
 
     return (
-        <div className="card" state={clicked} onClick={setToClicked}>
+        <div className={"card - " + props.name} state={clicked} onClick={setToClicked}>
             <img src={props.image} alt={props.image} />
             <p>{props.name}</p>
         </div>
