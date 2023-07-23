@@ -44,6 +44,7 @@ body {
     max-width: 200px;
     text-align: center;
     background-color: aqua;
+    transition: ease-in-out 0.5s;
 }
 
 .card img {
@@ -54,7 +55,7 @@ body {
 
 .card:hover {
     cursor: pointer;
-    scale: (0.6);
+    transform: scale(0.9);
 }
 
 footer {
